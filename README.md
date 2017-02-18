@@ -31,6 +31,26 @@ Open the repo directory.
 You did it.
 If any of this didn't work HMU homie.
 
+Initial Setup:
+To label yourself properly, type:
+git config --global user.name "Your name here"
+git config --global user.email "your_email@example.com"
+We also need to get you an SSH key assocation so you don't have to type in your git login info every time.
+First, check if you already have an SSH key. Type:
+ls -al ~/.ssh
+If nothing pops up:
+ssh-keygen -t rsa -C "your_associated_git_email@example.com"
+press enter through the rest, DONT change the directory for where the SSH goes. add a passcode if you want.
+
+
+If you see id_rsa.pub: 
+skip to CONTINUE
+
+CONTINUE
+Go to the .ssh directory, open id_rsa.pub in notepad, and copy the file.
+Go to your github profile, go to SSH keys, and add a new SSH key. paste in the contents of the id_rsa.pub file.
+If this all worked, you should be able to type in ssh -T git@github.com and see a "Hi Username!" response.
+
 Second:
 You can now see our repository just like any normal directory, this particular directory is just tracked by Git.
 Go back to your bash.
@@ -47,8 +67,8 @@ git status // this is the equivalent of ls in git, you'll type this a lot
 If you haven't made any changes yet, nothing should pop up.
 Go ahead and edit the readme.md file with anything bogus, add "<name> TEST", at the bottom of the file, or whatever. Save your changes.
 Type git status again. This time shit will pop up. You have stuff that is different than master!
-Type "git add <filename>"
-Type git status again. Color should change from red to green.
+Type "git add <filename>" // this is case sensitive
+Type git status again. Your file should change from red to green.
 Type:
 git commit -m "MY FIRST COMMIT YAY"
 Type git status. Nothing should happen again, you just did your first commit. Grats.

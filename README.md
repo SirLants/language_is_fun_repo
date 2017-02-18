@@ -22,15 +22,6 @@ Also, in case this needs to be said, watch a YouTube video on what Git is if you
 Its basically just a virtual directory that has a bunch of diff functionality built in.
 Makes it easy to keep up-to-date versions of code and to not completely fuck anything up.
 
-First:
-Open up Git Bash, or on Mac open Terminal. Navigate to whatever directory you want to clone the repository into.
-When you are in said directory, copy and paste this command:
-git clone https://github.com/SirLants/language_is_fun_repo.git
-You should see a bunch of shit happen and you should now be able to type "ls" and see our repo
-Open the repo directory.
-You did it.
-If any of this didn't work HMU homie.
-
 Initial Setup:
 To label yourself properly, type:
 git config --global user.name "Your name here"
@@ -58,6 +49,15 @@ This should spit out a pid (if you have taken 451 you know this is the thread th
 Provided that all works, type:
 ssh-add ~/.ssh/id_rsa
 If this doesn't work you fucked something up. HMU.
+
+First:
+Open up Git Bash, or on Mac open Terminal. Navigate to whatever directory you want to clone the repository into.
+When you are in said directory, copy and paste this command:
+git clone git@github.com:SirLants/language_is_fun_repo.git
+You should see a bunch of shit happen and you should now be able to type "ls" and see our repo. If your ssh isn't setup properly this may have issues.
+Open the repo directory.
+You did it.
+If any of this didn't work HMU homie.
 
 Second:
 You can now see our repository just like any normal directory, this particular directory is just tracked by Git.

@@ -51,6 +51,14 @@ Go to the .ssh directory, open id_rsa.pub in notepad, and copy the file.
 Go to your github profile, go to SSH keys, and add a new SSH key. paste in the contents of the id_rsa.pub file.
 If this all worked, you should be able to type in ssh -T git@github.com and see a "Hi Username!" response.
 
+FINALLY
+make sure ssh-agent is running, type:
+eval $(ssh-agent -s)
+This should spit out a pid (if you have taken 451 you know this is the thread the process is running on)
+Provided that all works, type:
+ssh-add ~/.ssh/id_rsa
+If this doesn't work you fucked something up. HMU.
+
 Second:
 You can now see our repository just like any normal directory, this particular directory is just tracked by Git.
 Go back to your bash.
@@ -77,7 +85,7 @@ Fourth:
 Now you have a commit, but that commit is only on your local machine, the great repository in the sky has not yet been gifted with your awesome code.
 To change this, type:
 git push origin <branch_name>
-Some shit should pop up.
+Some shit should pop up. If it asks you for your username you didn't set up SSH properly.
 Now go to our GitHub repository on the GitHub website.
 Your branch should automatically show up on the main screen and offer to pull request.
 Go ahead and do that. Make sure you are going from your branch to master. Type a useful message that highlights what you are doing with this pull request.

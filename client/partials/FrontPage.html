@@ -1,0 +1,26 @@
+<div class="frontBody" style="width:100%;height:100%;">
+	<div class="frontLeftColumn" style="float:left;">
+		<h1>News Is Cool</h1>
+		<ul>
+			<li data-ng-repeat="news in newsReel">
+				{{ news.title }}
+			</li>
+		</ul>
+	</div>
+	<div class="frontMiddleColumn" style="float:left;margin-left:30px;">
+		<h1>Hot Deals</h1>
+		<ul>
+			<li data-ng-repeat="deals in hotDeals">
+				{{ deals.address }}
+			</li>
+		</ul>
+	</div>
+	<div class="frontRightColumn" style="float:left;margin-left:30px;">
+		<h1>How To Use</h1>
+		<ul>
+			<li data-ng-repeat="info in infoList">
+				{{ info.link }}
+			</li>
+		</ul>
+	</div>
+</div>

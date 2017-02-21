@@ -1,0 +1,22 @@
+{
+  "name": "client",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "angular": "^1.4.4",
+    "angular-route": "^1.4.4",
+    "bootstrap": "^3.3.5",
+    "jquery": "^2.1.4",
+    "jshint": "^2.9.4",
+    "less": "^2.7.2",
+    "recess": "^1.1.9",
+    "uglify-js": "^2.7.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

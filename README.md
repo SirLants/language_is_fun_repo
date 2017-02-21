@@ -104,6 +104,7 @@ If you don't git pull this will say "your changes haven't been merged", that is 
 And that is all! I think!
 ----------------------------------------------------------------------------------------------
 
+JOHN TEST
 
 
 File Structure (for later):
